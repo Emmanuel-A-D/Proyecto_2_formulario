@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Formulario</title>
+    <style>
+      body{
+  background: rgb(154, 191, 199);
+  font-family: arial;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+
+}
+#box{
+    position: relative;
+    margin: 80px 250px 90px 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    background: rgb(154, 163, 165);
+    width: auto;
+}
+#title{
+  color: rgb(220, 44, 44);
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+#description{
+  color: white;
+}
+#dato{
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+}
+#texto{
+    width: 70%;
+    border-radius: 5px 5px 5px 5px;
+    padding: 7px;
+    border: 2px solid black;
+}
+#dropdown{
+    width: 70%;
+    border-radius: 5px 5px 5px 5px;
+    padding: 7px;  
+    border: 2px solid black;  
+}
+#radius{
+    width: 200px;
+    margin: auto;
+    color: black;
+}
+#cbox{
+    width: 200px;
+    margin: auto;
+    color: black;
+}
+#submit{
+  cursor: pointer;
+  padding: 7px;
+  margin: 0 0px 40px 0;
+  border: 2px solid rgb(211, 158, 158);
+  background: white;
+  border-radius: 8px 8px 8px 8px;
+  width: 70%;
+ 
+}
+#submit:hover {
+    background: rgb(238, 200, 200);
+       box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+#bajo:hover{
+   box-shadow: 0 0 20px rgba(15, 15, 15, 0.8);
+}
+#medio:hover{
+   box-shadow: 0 0 20px rgba(3, 3, 3, 0.8);
+}
+#alto:hover{
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+    </style>
+  </head>
+  <body>
+    <header id="title"><h1> Formulario encuesta de calidad </h1></header>
+    
+    <p id="description"> Es de vital importancia para nosotros conocer el nivel de satisfacion de nuestros clientes para poder mejorar nuestra atencion.  </p>
+<div id="box">
+    <form id="survey-form">
+        <div id="datos">
+      <label id="name-label">
+          <p id="dato"><b>Nombre</b></p>
+      <input id="texto" type="text" placeholder="Introduce tu nombre" required></label>
+      <label id="email-label">
+          <p id="dato"><b>Correo electronico</b></p>
+      <input id="texto" type="email" placeholder="Introduce tu correo electronico" required></label>
+      <label id="number-label">
+          <p id="dato"><b>Edad</b></p>
+      <input id="texto" type="number" min="18" max="50" placeholder="Introduce tu Edad" required></label>
+        </div>
+      <p>¿<b>Que tan satisfecho se encuentra con nuestros servicios</b>?</p>
+      <select name="dropdown" id="dropdown">
+        <option value=""> Elige tunivel de satisfaccion </option>
+        <option value="bajo">Insatisfecho</option>
+        <option value="medio"> Satisfecho </option>
+        <option value="alto"> Muy satisfecho </option>
+      </select>
+      <p>¿<b>Que calificacion le daria a la calidad de nuestros servicios</b>?</p>
+      <div id="radius">
+      <label id="bajo1">
+        <input id="bajo" type="radio" value="bajo" name="bajo"> Bajo</label>
+        <label id="medio1">
+        <input id="medio" type="radio" value="medio" name="medio"> Medio</label>
+        <label id="alto1">
+        <input id="alto" type="radio" value="alto" name="alto"> Alto</label>
+        </div>
+        <p>¿<b>Que calificacion le daria a la atencion prestada por parte de nuestros colaboradores</b>?</p>
+      <div id="radius">
+      <label id="bajo2">
+        <input id="bajo" type="radio" value="bajo" name="bajo"> Bajo</label>
+        <label id="medio2">
+        <input id="medio" type="radio" value="medio" name="medio"> Medio</label>
+        <label id="alto2">
+        <input id="alto" type="radio" value="alto" name="alto"> Alto</label>
+        </div>
+        <p>¿<b>Volveria a solicitar nuestros servicios</b>?</p>
+        <div id="cbox">
+        <label id="cbox1">
+        <input type="checkbox" id="bajo" value="bajo" > No </label>
+        <label id="cbox2">
+        <input type="checkbox" id="medio" value="medio" > Talvez </label>
+        <label id="cbox3">
+        <input type="checkbox" id="alto" value="alto" > Si </label>
+        </div>
+        <p><b>Cuentanos como crees que podriamos mejorar nuestros servicios.</b></p>
+       <textarea id="texto" name="mensage" placeholder="Cuentanos tu opinion" ></textarea>
+        <p><b>Envia tus respuestas</b></p>
+     <input id="submit" button type="submit"> 
+</div>
+    </form>
+  </body>
+</html>
