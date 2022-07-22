@@ -1,0 +1,75 @@
+body{
+    background: rgb(154, 191, 199);
+    font-family: arial;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+  
+  }
+  #box{
+      position: relative;
+      margin: 80px 250px 90px 250px;
+      border-radius: 5px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.8);
+      background: rgb(154, 163, 165);
+      width: auto;
+  }
+  #title{
+    color: rgb(220, 44, 44);
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+  }
+  #description{
+    color: white;
+  }
+  #dato{
+      color: white;
+      text-align: left;
+      margin-left: 50px;
+  }
+  #texto{
+      width: 70%;
+      border-radius: 5px 5px 5px 5px;
+      padding: 7px;
+      border: 2px solid black;
+  }
+  #dropdown{
+      width: 70%;
+      border-radius: 5px 5px 5px 5px;
+      padding: 7px;  
+      border: 2px solid black;  
+  }
+  #radius{
+      width: 200px;
+      margin: auto;
+      color: black;
+  }
+  #cbox{
+      width: 200px;
+      margin: auto;
+      color: black;
+  }
+  #submit{
+    cursor: pointer;
+    padding: 7px;
+    margin: 0 0px 40px 0;
+    border: 2px solid rgb(211, 158, 158);
+    background: white;
+    border-radius: 8px 8px 8px 8px;
+    width: 70%;
+   
+  }
+  #submit:hover {
+      background: rgb(238, 200, 200);
+         box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  }
+  #bajo:hover{
+     box-shadow: 0 0 20px rgba(15, 15, 15, 0.8);
+  }
+  #medio:hover{
+     box-shadow: 0 0 20px rgba(3, 3, 3, 0.8);
+  }
+  #alto:hover{
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  
